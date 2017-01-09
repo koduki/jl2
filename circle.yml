@@ -1,0 +1,10 @@
+machine:
+  java:
+    version: oraclejdk8
+  timezone:
+    Asia/Tokyo
+test:
+  override:
+    - mvn site
+  post:
+    - cp -r ./target/site/* $CIRCLE_TEST_REPORTS/

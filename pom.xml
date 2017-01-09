@@ -2,14 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.orz.pascal.tce</groupId>
-    <artifactId>j-little2</artifactId>
+    <artifactId>jl2</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
+    
+    <name>jl2</name>
+    <url>https://github.com/koduki/jl2</url>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <github.repo.directory>C:/Users/koduki/git/koduki/koduki.github.io/mvn-repo</github.repo.directory>
+        <github.repo.directory>koduki.github.io/mvn-repo</github.repo.directory>
     </properties>
     <distributionManagement>
         <repository>
@@ -18,7 +22,38 @@
             <url>file://${github.repo.directory}</url>
         </repository>
     </distributionManagement>
-    <name>jl2</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.12</version>
+                <configuration>
+                    <!-- Git コミットメッセージ -->
+                    <message>Maven artifacts for ${project.version}</message>
+                    <noJekyll>true</noJekyll>
+                    <!-- distributionManagement の url と一致させる -->
+                    <outputDirectory>${github.repo.directory}</outputDirectory>
+                    <!-- リモートブランチ名 
+                    <branch>refs/heads/mvn-repo</branch>
+                    -->
+                    <includes>
+                        <include>**/*</include>
+                    </includes>
+                    <repositoryName>koduki.github.io</repositoryName>
+                    <repositoryOwner>koduki</repositoryOwner>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <phase>deploy</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
