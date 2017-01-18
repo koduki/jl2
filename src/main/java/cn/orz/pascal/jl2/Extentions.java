@@ -48,7 +48,7 @@ public class Extentions {
      * @param elements Elements pair of this Map
      * @return ImmutableMap
      */
-    public static <K, V> ImmutableMap<K, V> mapi(Tuples.Tuple2<K, V>... elements) {
+    public static <K, V> ImmutableMap<K, V> imap(Tuples.Tuple2<K, V>... elements) {
         return new ImmutableMap<>(map(elements));
     }
 

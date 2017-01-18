@@ -22,7 +22,7 @@ public class ImmutableMapTest {
 
     @Test
     public void testPutWithNewKey() {
-        ImmutableMap<String, String> map1 = mapi($("k1", "v1"), $("k2", "v2"));
+        ImmutableMap<String, String> map1 = imap($("k1", "v1"), $("k2", "v2"));
         ImmutableMap<String, String> result = map1.put("k3", "v3");
 
         assertThat(map1.size(), is(2));
@@ -34,7 +34,7 @@ public class ImmutableMapTest {
 
     @Test
     public void testPutWithExistKey() {
-        ImmutableMap<String, String> map1 = mapi($("k1", "v1"), $("k2", "v2"));
+        ImmutableMap<String, String> map1 = imap($("k1", "v1"), $("k2", "v2"));
         ImmutableMap<String, String> result = map1.put("k2", "new");
 
         assertThat(map1.size(), is(2));
@@ -46,7 +46,7 @@ public class ImmutableMapTest {
 
     @Test
     public void testRemove() {
-        ImmutableMap<String, String> map1 = mapi($("k1", "v1"), $("k2", "v2"));
+        ImmutableMap<String, String> map1 = imap($("k1", "v1"), $("k2", "v2"));
         ImmutableMap<String, String> result = map1.remove("k2");
 
         assertThat(map1.size(), is(2));
