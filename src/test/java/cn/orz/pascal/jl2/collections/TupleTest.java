@@ -8,6 +8,7 @@ package cn.orz.pascal.jl2.collections;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import static cn.orz.pascal.jl2.collections.Tuples.*;
+import static cn.orz.pascal.jl2.Extentions.*;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;

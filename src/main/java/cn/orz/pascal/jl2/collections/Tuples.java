@@ -16,19 +16,6 @@ import java.util.Objects;
 public interface Tuples {
 
     /**
-     * Create Tuple2.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @return Tuple(_1, _2)
-     */
-    public static <T1, T2> Tuple2<T1, T2> $(T1 _1, T2 _2) {
-        return new Tuple2<>(_1, _2);
-    }
-
-    /**
      * A tuple of 2 elements.
      *
      * @param <T1> Type 1 of this Tuple
@@ -102,21 +89,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple2{" + "_1=" + _1 + ", _2=" + _2 + "}";
         }
-    }
-
-    /**
-     * Create Tuple3.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @return Tuple(_1, _2, _3)
-     */
-    public static <T1, T2, T3> Tuple3<T1, T2, T3> $(T1 _1, T2 _2, T3 _3) {
-        return new Tuple3<>(_1, _2, _3);
     }
 
     /**
@@ -210,23 +182,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple3{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + "}";
         }
-    }
-
-    /**
-     * Create Tuple4.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @return Tuple(_1, _2, _3, _4)
-     */
-    public static <T1, T2, T3, T4> Tuple4<T1, T2, T3, T4> $(T1 _1, T2 _2, T3 _3, T4 _4) {
-        return new Tuple4<>(_1, _2, _3, _4);
     }
 
     /**
@@ -337,25 +292,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple4{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + "}";
         }
-    }
-
-    /**
-     * Create Tuple5.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5)
-     */
-    public static <T1, T2, T3, T4, T5> Tuple5<T1, T2, T3, T4, T5> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5) {
-        return new Tuple5<>(_1, _2, _3, _4, _5);
     }
 
     /**
@@ -483,27 +419,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple5{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + "}";
         }
-    }
-
-    /**
-     * Create Tuple6.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6)
-     */
-    public static <T1, T2, T3, T4, T5, T6> Tuple6<T1, T2, T3, T4, T5, T6> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6) {
-        return new Tuple6<>(_1, _2, _3, _4, _5, _6);
     }
 
     /**
@@ -648,29 +563,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple6{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + "}";
         }
-    }
-
-    /**
-     * Create Tuple7.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7> Tuple7<T1, T2, T3, T4, T5, T6, T7> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7) {
-        return new Tuple7<>(_1, _2, _3, _4, _5, _6, _7);
     }
 
     /**
@@ -832,31 +724,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple7{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + "}";
         }
-    }
-
-    /**
-     * Create Tuple8.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8> Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8) {
-        return new Tuple8<>(_1, _2, _3, _4, _5, _6, _7, _8);
     }
 
     /**
@@ -1035,33 +902,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple8{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + "}";
         }
-    }
-
-    /**
-     * Create Tuple9.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9> Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9) {
-        return new Tuple9<>(_1, _2, _3, _4, _5, _6, _7, _8, _9);
     }
 
     /**
@@ -1257,35 +1097,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple9{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + "}";
         }
-    }
-
-    /**
-     * Create Tuple10.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10) {
-        return new Tuple10<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10);
     }
 
     /**
@@ -1498,37 +1309,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple10{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + "}";
         }
-    }
-
-    /**
-     * Create Tuple11.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> Tuple11<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11) {
-        return new Tuple11<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11);
     }
 
     /**
@@ -1758,39 +1538,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple11{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + "}";
         }
-    }
-
-    /**
-     * Create Tuple12.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> Tuple12<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12) {
-        return new Tuple12<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12);
     }
 
     /**
@@ -2037,41 +1784,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple12{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + "}";
         }
-    }
-
-    /**
-     * Create Tuple13.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13) {
-        return new Tuple13<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13);
     }
 
     /**
@@ -2335,44 +2047,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple13{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + ", _13=" + _13 + "}";
         }
-    }
-
-    /**
-     * Create Tuple14.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param <T14> Type 14 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @param _14 Element 14 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13,
-     * _14)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> Tuple14<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13, T14 _14) {
-        return new Tuple14<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14);
     }
 
     /**
@@ -2653,46 +2327,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple14{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + ", _13=" + _13 + ", _14=" + _14 + "}";
         }
-    }
-
-    /**
-     * Create Tuple15.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param <T14> Type 14 of this Tuple
-     * @param <T15> Type 15 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @param _14 Element 14 of this Tuple
-     * @param _15 Element 15 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13,
-     * _14, _15)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> Tuple15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13, T14 _14, T15 _15) {
-        return new Tuple15<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15);
     }
 
     /**
@@ -2990,48 +2624,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple15{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + ", _13=" + _13 + ", _14=" + _14 + ", _15=" + _15 + "}";
         }
-    }
-
-    /**
-     * Create Tuple16.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param <T14> Type 14 of this Tuple
-     * @param <T15> Type 15 of this Tuple
-     * @param <T16> Type 16 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @param _14 Element 14 of this Tuple
-     * @param _15 Element 15 of this Tuple
-     * @param _16 Element 16 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13,
-     * _14, _15, _16)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> Tuple16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13, T14 _14, T15 _15, T16 _16) {
-        return new Tuple16<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16);
     }
 
     /**
@@ -3346,50 +2938,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple16{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + ", _13=" + _13 + ", _14=" + _14 + ", _15=" + _15 + ", _16=" + _16 + "}";
         }
-    }
-
-    /**
-     * Create Tuple17.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param <T14> Type 14 of this Tuple
-     * @param <T15> Type 15 of this Tuple
-     * @param <T16> Type 16 of this Tuple
-     * @param <T17> Type 17 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @param _14 Element 14 of this Tuple
-     * @param _15 Element 15 of this Tuple
-     * @param _16 Element 16 of this Tuple
-     * @param _17 Element 17 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13,
-     * _14, _15, _16, _17)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> Tuple17<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13, T14 _14, T15 _15, T16 _16, T17 _17) {
-        return new Tuple17<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17);
     }
 
     /**
@@ -3721,52 +3269,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple17{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + ", _13=" + _13 + ", _14=" + _14 + ", _15=" + _15 + ", _16=" + _16 + ", _17=" + _17 + "}";
         }
-    }
-
-    /**
-     * Create Tuple18.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param <T14> Type 14 of this Tuple
-     * @param <T15> Type 15 of this Tuple
-     * @param <T16> Type 16 of this Tuple
-     * @param <T17> Type 17 of this Tuple
-     * @param <T18> Type 18 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @param _14 Element 14 of this Tuple
-     * @param _15 Element 15 of this Tuple
-     * @param _16 Element 16 of this Tuple
-     * @param _17 Element 17 of this Tuple
-     * @param _18 Element 18 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13,
-     * _14, _15, _16, _17, _18)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> Tuple18<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13, T14 _14, T15 _15, T16 _16, T17 _17, T18 _18) {
-        return new Tuple18<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18);
     }
 
     /**
@@ -4115,54 +3617,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple18{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + ", _13=" + _13 + ", _14=" + _14 + ", _15=" + _15 + ", _16=" + _16 + ", _17=" + _17 + ", _18=" + _18 + "}";
         }
-    }
-
-    /**
-     * Create Tuple19.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param <T14> Type 14 of this Tuple
-     * @param <T15> Type 15 of this Tuple
-     * @param <T16> Type 16 of this Tuple
-     * @param <T17> Type 17 of this Tuple
-     * @param <T18> Type 18 of this Tuple
-     * @param <T19> Type 19 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @param _14 Element 14 of this Tuple
-     * @param _15 Element 15 of this Tuple
-     * @param _16 Element 16 of this Tuple
-     * @param _17 Element 17 of this Tuple
-     * @param _18 Element 18 of this Tuple
-     * @param _19 Element 19 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13,
-     * _14, _15, _16, _17, _18, _19)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> Tuple19<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13, T14 _14, T15 _15, T16 _16, T17 _17, T18 _18, T19 _19) {
-        return new Tuple19<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19);
     }
 
     /**
@@ -4528,56 +3982,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple19{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + ", _13=" + _13 + ", _14=" + _14 + ", _15=" + _15 + ", _16=" + _16 + ", _17=" + _17 + ", _18=" + _18 + ", _19=" + _19 + "}";
         }
-    }
-
-    /**
-     * Create Tuple20.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param <T14> Type 14 of this Tuple
-     * @param <T15> Type 15 of this Tuple
-     * @param <T16> Type 16 of this Tuple
-     * @param <T17> Type 17 of this Tuple
-     * @param <T18> Type 18 of this Tuple
-     * @param <T19> Type 19 of this Tuple
-     * @param <T20> Type 20 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @param _14 Element 14 of this Tuple
-     * @param _15 Element 15 of this Tuple
-     * @param _16 Element 16 of this Tuple
-     * @param _17 Element 17 of this Tuple
-     * @param _18 Element 18 of this Tuple
-     * @param _19 Element 19 of this Tuple
-     * @param _20 Element 20 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13,
-     * _14, _15, _16, _17, _18, _19, _20)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> Tuple20<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13, T14 _14, T15 _15, T16 _16, T17 _17, T18 _18, T19 _19, T20 _20) {
-        return new Tuple20<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20);
     }
 
     /**
@@ -4960,58 +4364,6 @@ public interface Tuples {
         public String toString() {
             return "Tuple20{" + "_1=" + _1 + ", _2=" + _2 + ", _3=" + _3 + ", _4=" + _4 + ", _5=" + _5 + ", _6=" + _6 + ", _7=" + _7 + ", _8=" + _8 + ", _9=" + _9 + ", _10=" + _10 + ", _11=" + _11 + ", _12=" + _12 + ", _13=" + _13 + ", _14=" + _14 + ", _15=" + _15 + ", _16=" + _16 + ", _17=" + _17 + ", _18=" + _18 + ", _19=" + _19 + ", _20=" + _20 + "}";
         }
-    }
-
-    /**
-     * Create Tuple21.
-     *
-     * @param <T1> Type 1 of this Tuple
-     * @param <T2> Type 2 of this Tuple
-     * @param <T3> Type 3 of this Tuple
-     * @param <T4> Type 4 of this Tuple
-     * @param <T5> Type 5 of this Tuple
-     * @param <T6> Type 6 of this Tuple
-     * @param <T7> Type 7 of this Tuple
-     * @param <T8> Type 8 of this Tuple
-     * @param <T9> Type 9 of this Tuple
-     * @param <T10> Type 10 of this Tuple
-     * @param <T11> Type 11 of this Tuple
-     * @param <T12> Type 12 of this Tuple
-     * @param <T13> Type 13 of this Tuple
-     * @param <T14> Type 14 of this Tuple
-     * @param <T15> Type 15 of this Tuple
-     * @param <T16> Type 16 of this Tuple
-     * @param <T17> Type 17 of this Tuple
-     * @param <T18> Type 18 of this Tuple
-     * @param <T19> Type 19 of this Tuple
-     * @param <T20> Type 20 of this Tuple
-     * @param <T21> Type 21 of this Tuple
-     * @param _1 Element 1 of this Tuple
-     * @param _2 Element 2 of this Tuple
-     * @param _3 Element 3 of this Tuple
-     * @param _4 Element 4 of this Tuple
-     * @param _5 Element 5 of this Tuple
-     * @param _6 Element 6 of this Tuple
-     * @param _7 Element 7 of this Tuple
-     * @param _8 Element 8 of this Tuple
-     * @param _9 Element 9 of this Tuple
-     * @param _10 Element 10 of this Tuple
-     * @param _11 Element 11 of this Tuple
-     * @param _12 Element 12 of this Tuple
-     * @param _13 Element 13 of this Tuple
-     * @param _14 Element 14 of this Tuple
-     * @param _15 Element 15 of this Tuple
-     * @param _16 Element 16 of this Tuple
-     * @param _17 Element 17 of this Tuple
-     * @param _18 Element 18 of this Tuple
-     * @param _19 Element 19 of this Tuple
-     * @param _20 Element 20 of this Tuple
-     * @param _21 Element 21 of this Tuple
-     * @return Tuple(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13,
-     * _14, _15, _16, _17, _18, _19, _20, _21)
-     */
-    public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> Tuple21<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> $(T1 _1, T2 _2, T3 _3, T4 _4, T5 _5, T6 _6, T7 _7, T8 _8, T9 _9, T10 _10, T11 _11, T12 _12, T13 _13, T14 _14, T15 _15, T16 _16, T17 _17, T18 _18, T19 _19, T20 _20, T21 _21) {
-        return new Tuple21<>(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21);
     }
 
     /**
