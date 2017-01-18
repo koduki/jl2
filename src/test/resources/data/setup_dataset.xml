@@ -1,0 +1,11 @@
+<dataset>
+    <genders id="1" gender_name="Male"/>
+    <genders id="2" gender_name="Female"/>
+    <genders id="3" gender_name="Trans Male"/>
+    <genders id="4" gender_name="Trans Female"/>
+    <genders id="5" gender_name="Cross Dressing"/>
+    <persons first_name="Barack" last_name="Obama" age="58" gender_id="1"/>
+    <persons first_name="Theresa" last_name="May" age="43" gender_id="2"/>
+    <persons first_name="Vladimir" last_name="Putin" age="52" gender_id="1"/>
+    <persons first_name="Matsuko" last_name="Deluxe" age="45" gender_id="1"/>
+</dataset>

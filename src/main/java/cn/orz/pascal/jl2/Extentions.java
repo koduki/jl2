@@ -7,6 +7,7 @@ package cn.orz.pascal.jl2;
 
 import cn.orz.pascal.jl2.collections.ImmutableMap;
 import cn.orz.pascal.jl2.collections.Tuples;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -18,6 +19,10 @@ import java.util.Set;
  * @author koduki
  */
 public class Extentions {
+
+    public static InputStream open(String path) {
+        return System.class.getResourceAsStream(path);
+    }
 
     /**
      * Return Map.

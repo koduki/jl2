@@ -16,6 +16,7 @@
         <github.repo.directory>mvn-repo</github.repo.directory>
         <github.global.server>github</github.global.server>
     </properties>
+    <!--
     <distributionManagement>
         <repository>
             <id>github</id>
@@ -23,8 +24,10 @@
             <url>file://target/${github.repo.directory}</url>
         </repository>
     </distributionManagement>
+    -->
     <build>
         <plugins>
+            <!--
             <plugin>
                 <groupId>org.apache.ant</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
@@ -46,19 +49,17 @@
                 </executions>
 
             </plugin>
+            -->
+            <!--
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.12</version>
                 <configuration>
-                    <!-- Git コミットメッセージ -->
                     <message>Maven artifacts for ${project.version}</message>
                     <noJekyll>true</noJekyll>
-                    <!-- distributionManagement の url と一致させる -->
                     <outputDirectory>target/${github.repo.directory}/</outputDirectory>
-                    <!-- リモートブランチ名 
                     <branch>refs/heads/mvn-repo</branch>
-                    -->
                     <includes>
                         <include>**/*</include>
                     </includes>
@@ -74,6 +75,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
     </build>
     <dependencies>
@@ -88,6 +90,18 @@
             <artifactId>hamcrest-core</artifactId>
             <version>1.3</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.dbunit</groupId>
+            <artifactId>dbunit</artifactId>
+            <version>2.5.3</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.192</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
