@@ -1,4 +1,4 @@
-Java Little Library
+Java Little Library(JL2)
 ======================
 
 This is a very simple java library.
@@ -11,7 +11,7 @@ Example
 
 ```java
 Tuple2<String, Integer> x = new Tuple2<>("A", 10);
-Tuple2<Integer, String> y = $(1, "B"); // $ method is syntax sugar
+Tuple2<Integer, String> y = $(1, "B"); // '$' method is a syntax sugar.
 Tuple4<Integer, String, Boolean, List<Integer>> x = $(1, "A", true, Arrays.asList(2));
 ````
 
@@ -38,3 +38,20 @@ ImmutableMap<String, String> addedMap = map.put("k3", "v3");
 ImmutableMap<String, String> removedMap = map.remove("k2");
 ```
 
+### JDBC Wrapper for StreamAPI
+
+```java
+try (
+        Connection con = DriverManager.getConnection(JDBC_URL, USER, PASSWORD);
+        PreparedStatement pt = con.prepareStatement("select * from persons ");) {
+    List<String> ids = QueryStream.of(pt.executeQuery())
+            .map(r -> r.getString(1))
+            .collect(Collectors.toList());
+
+    assertThat(ids.size(), is(4));
+    assertThat(ids.get(0), is("1"));
+    assertThat(ids.get(1), is("2"));
+    assertThat(ids.get(2), is("3"));
+    assertThat(ids.get(3), is("4"));
+}
+```
