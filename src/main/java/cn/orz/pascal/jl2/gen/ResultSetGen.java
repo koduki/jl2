@@ -5,13 +5,12 @@
  */
 package cn.orz.pascal.jl2.gen;
 
-import cn.orz.pascal.jl2.sql.UncheckedSQLException;
-import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
+ * This is a code generator. So it is not production code.
  *
  * @author koduki
  */
