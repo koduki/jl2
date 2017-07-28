@@ -24,6 +24,7 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
 /**
+ * Query Stream Test.
  *
  * @author koduki
  */

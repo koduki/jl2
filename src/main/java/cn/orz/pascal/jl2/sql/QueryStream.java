@@ -12,11 +12,15 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 /**
+ * Stream API Wrapper for JDBC.
  *
  * @author koduki
  */
 public class QueryStream {
 
+    /**
+     * Iterator for ResultSet.
+     */
     public static class ResultSetIterator implements Iterable<UncheckedResultSet>, Iterator<UncheckedResultSet> {
 
         private final ResultSet rs;
@@ -57,8 +61,16 @@ public class QueryStream {
 
     }
 
-    public static Stream<UncheckedResultSet> of(ResultSet rs) throws SQLException {
-        ResultSetIterator iterator = new ResultSetIterator(rs);
+    /**
+     * Returns Stream with wrapping ResultSet. This iterator doesn't support
+     * parallel stream.
+     *
+     * @param resultset A data source.
+     * @return Wrapped ResultSet
+     * @throws SQLException
+     */
+    public static Stream<UncheckedResultSet> of(ResultSet resultset) throws SQLException {
+        ResultSetIterator iterator = new ResultSetIterator(resultset);
         return StreamSupport.stream(iterator.spliterator(), false);
     }
 }

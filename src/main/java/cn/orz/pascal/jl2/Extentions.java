@@ -15,14 +15,12 @@ import java.util.List;
 import java.util.Set;
 
 /**
+ * This is Extentions for basic methods.
  *
  * @author koduki
  */
 public class Extentions {
 
-    public static InputStream open(String path) {
-        return System.class.getResourceAsStream(path);
-    }
 
     /**
      * Return Map.

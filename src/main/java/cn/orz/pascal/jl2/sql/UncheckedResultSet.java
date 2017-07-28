@@ -21,14 +21,21 @@ import java.sql.Timestamp;
 /**
  * Result Set wrapper for lambda.
  *
+ * This class throws UncheckedSQLException instead of SQLException.
+ *
  * @author koduki
  */
 public class UncheckedResultSet implements Closeable {
 
     private final ResultSet rs;
 
-    public UncheckedResultSet(ResultSet rs) {
-        this.rs = rs;
+    /**
+     * Constructs an wrapped ResultSet.
+     *
+     * @param resultset a data source.
+     */
+    public UncheckedResultSet(ResultSet resultset) {
+        this.rs = resultset;
     }
 
     @Override

@@ -8,6 +8,7 @@ package cn.orz.pascal.jl2.sql;
 import java.sql.SQLException;
 
 /**
+ * This is alternative implementation for SQLException.
  *
  * @author koduki
  */
