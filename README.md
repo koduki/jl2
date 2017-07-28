@@ -9,6 +9,9 @@ Example
 
 ### Tuple
 
+Tuple can realize multi type value by Java.
+This is almost Scala's Tuple.
+
 ```java
 Tuple2<String, Integer> x = new Tuple2<>("A", 10);
 Tuple2<Integer, String> y = $(1, "B"); // '$' method is a syntax sugar.
@@ -16,6 +19,8 @@ Tuple4<Integer, String, Boolean, List<Integer>> x = $(1, "A", true, Arrays.asLis
 ````
 
 ### Collection builder
+
+This is Collection builder like Scala.
 
 ```java
 Set<String> set = set("a", "b");
@@ -25,6 +30,9 @@ ImmutableMap<String, String> imap = imap($("k1", "v1"), $("k2", "v2"));
 ```
 
 ### Immutable operations
+
+This "Map" is immutable.
+We don't need to be careful about changing value by misstake.
 
 ```java
 // concat set as new object.
@@ -39,6 +47,11 @@ ImmutableMap<String, String> removedMap = map.remove("k2");
 ```
 
 ### JDBC Wrapper for StreamAPI
+
+JDBC throws SQLException. This is Checked Exception.
+That mean, it is very painful to use JDBC with Lambada.
+
+This API wraps ResultSet to integrate Lambda.
 
 ```java
 try (
