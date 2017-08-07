@@ -42,12 +42,14 @@ import static cn.orz.pascal.jl2.Extentions.*;
 ### Tuple
 
 Tuple can realize multi type value by Java.
-This is almost Scala's Tuple.
+
+This is almost Scala's Tuple. Tuple supports up to twenty one columns.
 
 ```java
 Tuple2<String, Integer> x = new Tuple2<>("A", 10);
 Tuple2<Integer, String> y = $(1, "B"); // '$' method is a syntax sugar.
 Tuple4<Integer, String, Boolean, List<Integer>> x = $(1, "A", true, Arrays.asList(2));
+Tuple2<Integer, Tuple2<String, String>> z = $(1, $("A", "B")); // Nested tuple is OK.
 ````
 
 ### Collection builder
@@ -84,6 +86,8 @@ JDBC throws SQLException. This is Checked Exception.
 That mean, it is very painful to use JDBC with Lambada.
 
 This API wraps ResultSet to integrate Lambda.
+
+`WARN: This API donsen't support "parallel"`
 
 ```java
 try (

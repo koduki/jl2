@@ -46,7 +46,19 @@ public class TupleTest {
         assertThat(x._2(), is("A"));
         assertThat(x._3(), is(true));
         assertThat(x._4().get(0), is(2));
-
     }
 
+    @Test
+    public void testNestedTuple() {
+        Tuple2<Integer, Tuple2<String, String>> x = $(1, $("A", "B"));
+        assertThat(x._1(), is(1));
+        assertThat(x._2()._1(), is("A"));
+        assertThat(x._2()._2(), is("B"));
+    }
+
+    @Test
+    public void testToString() {
+        Tuple2<Integer, Tuple2<String, String>> x = $(1, $("A", "B"));
+        assertThat(x.toString(), is("(1, (A, B))"));
+    }
 }
