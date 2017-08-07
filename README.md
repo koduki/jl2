@@ -4,8 +4,40 @@ Java Little Library(JL2)
 This is a very simple java library.
 This library support tuple, collection extentions, and so on.
 
+How to use
+------------
+
+Please add to "pom.xml".
+
+```xml 
+<repositories>
+    <repository>
+        <id>koduki-repos</id>
+        <url>https://raw.githubusercontent.com/koduki/koduki.github.io/mvn-repo/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>cn.orz.pascal</groupId>
+        <artifactId>jl2</artifactId>
+        <version>0.1</version>
+    </dependency>
+</dependencies>
+```
+
 Example
 ------------
+
+### DSL
+
+Please import follwoing "static import". 
+
+This is a extention for easy access to this library API.
+
+```java
+import static cn.orz.pascal.jl2.Extentions.*;
+```
 
 ### Tuple
 
