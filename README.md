@@ -52,6 +52,24 @@ Tuple4<Integer, String, Boolean, List<Integer>> x = $(1, "A", true, Arrays.asLis
 Tuple2<Integer, Tuple2<String, String>> z = $(1, $("A", "B")); // Nested tuple is OK.
 ````
 
+### Let
+
+"let" is a simulation of type inference.
+
+```java
+// Consumer
+let($(1, $("A", "B")), x -> {
+    assertThat(x._1(), is(1));
+    assertThat(x._2()._1(), is("A"));
+    assertThat(x._2()._2(), is("B"));
+});
+
+// Function
+int size = let(new ArrayList<String>(), xs -> {
+    return xs.size();
+});
+```
+
 ### Collection builder
 
 This is Collection builder like Scala.

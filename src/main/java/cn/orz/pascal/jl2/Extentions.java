@@ -7,12 +7,13 @@ package cn.orz.pascal.jl2;
 
 import cn.orz.pascal.jl2.collections.ImmutableMap;
 import cn.orz.pascal.jl2.collections.Tuples;
-import java.io.InputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 /**
  * This is Extentions for basic methods.
@@ -21,6 +22,28 @@ import java.util.Set;
  */
 public class Extentions {
 
+    /**
+     * Type inference simulation for function.
+     *
+     * @param <T> bind type
+     * @param <U> return type
+     * @param value bind instance
+     * @param function callback function
+     * @return result of function
+     */
+    public static <T, U> U let(T value, Function<T, U> function) {
+        return function.apply(value);
+    }
+
+    /**
+     *
+     * @param <T> bind type
+     * @param value bind instance
+     * @param consumer callback function
+     */
+    public static <T> void let(T value, Consumer<T> consumer) {
+        consumer.accept(value);
+    }
 
     /**
      * Return Map.
