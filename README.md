@@ -21,7 +21,7 @@ Please add to "pom.xml".
     <dependency>
         <groupId>cn.orz.pascal</groupId>
         <artifactId>jl2</artifactId>
-        <version>0.1</version>
+        <version>0.1-SNAPSHOT1</version>
     </dependency>
 </dependencies>
 ```

@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.orz.pascal</groupId>
     <artifactId>jl2</artifactId>
-    <version>0.1</version>
+    <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     
     <name>jl2</name>
@@ -16,41 +16,17 @@
         <github.repo.directory>mvn-repo</github.repo.directory>
         <github.global.server>github</github.global.server>
     </properties>
-    <!--
+
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>Local Github Pages</name>
-            <url>file://target/${github.repo.directory}</url>
+            <id>internal.repos</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.build.directory}/mvn-repo</url>
         </repository>
     </distributionManagement>
-    -->
+
     <build>
         <plugins>
-            <!--
-            <plugin>
-                <groupId>org.apache.ant</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.5</version>
-            
-                <configuration>
-                    <target>
-                        <echo message="hnakada files"/> 
-                        <mkdir dir="target/mvn-repo"/>
-                    </target>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <phase>compile</phase>
-                    </execution>
-                </executions>
-
-            </plugin>
-            -->
-            <!--
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
@@ -75,7 +51,6 @@
                     </execution>
                 </executions>
             </plugin>
-            -->
         </plugins>
     </build>
     <dependencies>
