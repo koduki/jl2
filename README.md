@@ -1,7 +1,7 @@
 Java Little Library(JL2)
 ======================
 
-This is a very simple java library.
+This is a very simple java library for SF(Sukoshi Functional).
 This library support tuple, collection extentions, and so on.
 
 How to use
@@ -21,7 +21,7 @@ Please add to "pom.xml".
     <dependency>
         <groupId>cn.orz.pascal</groupId>
         <artifactId>jl2</artifactId>
-        <version>0.1-SNAPSHOT1</version>
+        <version>0.1-SNAPSHOT</version>
     </dependency>
 </dependencies>
 ```
