@@ -16,12 +16,18 @@ import java.util.Objects;
 public interface Tuples {
 
     /**
+     * Tuple interface.
+     */
+    public interface Tuple extends Serializable {
+    }
+
+    /**
      * A tuple of 2 elements.
      *
      * @param <T1> Type 1 of this Tuple
      * @param <T2> Type 2 of this Tuple
      */
-    public static class Tuple2<T1, T2> implements Serializable {
+    public static class Tuple2<T1, T2> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -98,7 +104,7 @@ public interface Tuples {
      * @param <T2> Type 2 of this Tuple
      * @param <T3> Type 3 of this Tuple
      */
-    public static class Tuple3<T1, T2, T3> implements Serializable {
+    public static class Tuple3<T1, T2, T3> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -192,7 +198,7 @@ public interface Tuples {
      * @param <T3> Type 3 of this Tuple
      * @param <T4> Type 4 of this Tuple
      */
-    public static class Tuple4<T1, T2, T3, T4> implements Serializable {
+    public static class Tuple4<T1, T2, T3, T4> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -303,7 +309,7 @@ public interface Tuples {
      * @param <T4> Type 4 of this Tuple
      * @param <T5> Type 5 of this Tuple
      */
-    public static class Tuple5<T1, T2, T3, T4, T5> implements Serializable {
+    public static class Tuple5<T1, T2, T3, T4, T5> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -431,7 +437,7 @@ public interface Tuples {
      * @param <T5> Type 5 of this Tuple
      * @param <T6> Type 6 of this Tuple
      */
-    public static class Tuple6<T1, T2, T3, T4, T5, T6> implements Serializable {
+    public static class Tuple6<T1, T2, T3, T4, T5, T6> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -576,7 +582,7 @@ public interface Tuples {
      * @param <T6> Type 6 of this Tuple
      * @param <T7> Type 7 of this Tuple
      */
-    public static class Tuple7<T1, T2, T3, T4, T5, T6, T7> implements Serializable {
+    public static class Tuple7<T1, T2, T3, T4, T5, T6, T7> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -738,7 +744,7 @@ public interface Tuples {
      * @param <T7> Type 7 of this Tuple
      * @param <T8> Type 8 of this Tuple
      */
-    public static class Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> implements Serializable {
+    public static class Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -917,7 +923,7 @@ public interface Tuples {
      * @param <T8> Type 8 of this Tuple
      * @param <T9> Type 9 of this Tuple
      */
-    public static class Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> implements Serializable {
+    public static class Tuple9<T1, T2, T3, T4, T5, T6, T7, T8, T9> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -1113,7 +1119,7 @@ public interface Tuples {
      * @param <T9> Type 9 of this Tuple
      * @param <T10> Type 10 of this Tuple
      */
-    public static class Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> implements Serializable {
+    public static class Tuple10<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -1326,7 +1332,7 @@ public interface Tuples {
      * @param <T10> Type 10 of this Tuple
      * @param <T11> Type 11 of this Tuple
      */
-    public static class Tuple11<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> implements Serializable {
+    public static class Tuple11<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -1556,7 +1562,7 @@ public interface Tuples {
      * @param <T11> Type 11 of this Tuple
      * @param <T12> Type 12 of this Tuple
      */
-    public static class Tuple12<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> implements Serializable {
+    public static class Tuple12<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -1803,7 +1809,7 @@ public interface Tuples {
      * @param <T12> Type 12 of this Tuple
      * @param <T13> Type 13 of this Tuple
      */
-    public static class Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> implements Serializable {
+    public static class Tuple13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -2067,7 +2073,7 @@ public interface Tuples {
      * @param <T13> Type 13 of this Tuple
      * @param <T14> Type 14 of this Tuple
      */
-    public static class Tuple14<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> implements Serializable {
+    public static class Tuple14<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -2348,7 +2354,7 @@ public interface Tuples {
      * @param <T14> Type 14 of this Tuple
      * @param <T15> Type 15 of this Tuple
      */
-    public static class Tuple15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> implements Serializable {
+    public static class Tuple15<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -2646,7 +2652,7 @@ public interface Tuples {
      * @param <T15> Type 15 of this Tuple
      * @param <T16> Type 16 of this Tuple
      */
-    public static class Tuple16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> implements Serializable {
+    public static class Tuple16<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -2961,7 +2967,7 @@ public interface Tuples {
      * @param <T16> Type 16 of this Tuple
      * @param <T17> Type 17 of this Tuple
      */
-    public static class Tuple17<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> implements Serializable {
+    public static class Tuple17<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -3293,7 +3299,7 @@ public interface Tuples {
      * @param <T17> Type 17 of this Tuple
      * @param <T18> Type 18 of this Tuple
      */
-    public static class Tuple18<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> implements Serializable {
+    public static class Tuple18<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -3642,7 +3648,7 @@ public interface Tuples {
      * @param <T18> Type 18 of this Tuple
      * @param <T19> Type 19 of this Tuple
      */
-    public static class Tuple19<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> implements Serializable {
+    public static class Tuple19<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -4008,7 +4014,7 @@ public interface Tuples {
      * @param <T19> Type 19 of this Tuple
      * @param <T20> Type 20 of this Tuple
      */
-    public static class Tuple20<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> implements Serializable {
+    public static class Tuple20<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
@@ -4391,7 +4397,7 @@ public interface Tuples {
      * @param <T20> Type 20 of this Tuple
      * @param <T21> Type 21 of this Tuple
      */
-    public static class Tuple21<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> implements Serializable {
+    public static class Tuple21<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> implements Tuple {
 
         private final T1 _1;
         private final T2 _2;
