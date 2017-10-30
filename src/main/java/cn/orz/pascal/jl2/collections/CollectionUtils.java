@@ -48,12 +48,5 @@ public interface CollectionUtils {
 
         return xs;
     }
-
-    public static List<Integer> range(int startInclusive, int endExclusive) {
-        List<Integer> xs = new ArrayList<>();
-        for (int i = startInclusive; i <= endExclusive; i++) {
-            xs.add(i);
-        }
-        return xs;
-    }
+    
 }

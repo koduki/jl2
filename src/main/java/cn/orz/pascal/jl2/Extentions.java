@@ -5,9 +5,9 @@
  */
 package cn.orz.pascal.jl2;
 
-import cn.orz.pascal.jl2.collections.CollectionUtils;
 import cn.orz.pascal.jl2.collections.ImmutableMap;
 import cn.orz.pascal.jl2.collections.Tuples;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -21,7 +21,7 @@ import java.util.function.Function;
  *
  * @author koduki
  */
-public interface Extentions extends CollectionUtils {
+public class Extentions {
 
     /**
      * Type inference simulation for function.
@@ -94,6 +94,21 @@ public interface Extentions extends CollectionUtils {
      */
     public static <T> List<T> list(T... elements) {
         return Arrays.asList(elements);
+    }
+
+    /**
+     * Return range list.
+     *
+     * @param startInclusive start number
+     * @param endExclusive end number
+     * @return a list of range
+     */
+    public static List<Integer> range(int startInclusive, int endExclusive) {
+        List<Integer> xs = new ArrayList<>();
+        for (int i = startInclusive; i <= endExclusive; i++) {
+            xs.add(i);
+        }
+        return xs;
     }
 
     /**
