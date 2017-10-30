@@ -16,7 +16,15 @@
         <github.repo.directory>mvn-repo</github.repo.directory>
         <github.global.server>github</github.global.server>
     </properties>
-
+    
+    <repositories>
+        <repository>
+            <id>egit</id>
+            <name>Eclipse egit</name>
+            <url>https://repo.eclipse.org/content/repositories/egit-releases/</url>
+        </repository>
+    </repositories>
+    
     <distributionManagement>
         <repository>
             <id>internal.repos</id>
