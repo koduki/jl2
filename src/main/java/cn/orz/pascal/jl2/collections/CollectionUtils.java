@@ -15,7 +15,7 @@ import java.util.Set;
  *
  * @author koduki
  */
-public class CollectionUtils {
+public interface CollectionUtils {
 
     /**
      * Concat two sets as new set object.
@@ -46,6 +46,14 @@ public class CollectionUtils {
         xs.addAll(xs1);
         xs.addAll(xs2);
 
+        return xs;
+    }
+
+    public static List<Integer> range(int startInclusive, int endExclusive) {
+        List<Integer> xs = new ArrayList<>();
+        for (int i = startInclusive; i <= endExclusive; i++) {
+            xs.add(i);
+        }
         return xs;
     }
 }

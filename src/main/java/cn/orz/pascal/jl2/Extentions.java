@@ -5,6 +5,7 @@
  */
 package cn.orz.pascal.jl2;
 
+import cn.orz.pascal.jl2.collections.CollectionUtils;
 import cn.orz.pascal.jl2.collections.ImmutableMap;
 import cn.orz.pascal.jl2.collections.Tuples;
 import java.util.Arrays;
@@ -20,7 +21,7 @@ import java.util.function.Function;
  *
  * @author koduki
  */
-public class Extentions {
+public interface Extentions extends CollectionUtils {
 
     /**
      * Type inference simulation for function.

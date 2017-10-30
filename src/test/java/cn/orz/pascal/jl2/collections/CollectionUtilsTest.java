@@ -58,4 +58,9 @@ public class CollectionUtilsTest {
         Set<Integer> result = concat(set(), set());
         assertTrue(result.isEmpty());
     }
+
+    @Test
+    public void testRange() {
+        assertEquals(list(1, 2, 3), range(1, 3));
+    }
 }
