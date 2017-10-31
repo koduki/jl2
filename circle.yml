@@ -3,8 +3,8 @@ machine:
     version: oraclejdk8
   timezone:
     Asia/Tokyo
-test:
+deployment:
   override:
-    - mvn -s settings.xml clean deploy
+    - mvn -s circle_settings.xml clean site deploy
   post:
     - cp -r ./target/site/* $CIRCLE_TEST_REPORTS/
