@@ -5,6 +5,6 @@ machine:
     Asia/Tokyo
 test:
   override:
-    - mvn clean deploy
+    - mvn -s settings.xml clean deploy
   post:
     - cp -r ./target/site/* $CIRCLE_TEST_REPORTS/
