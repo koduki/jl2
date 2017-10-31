@@ -6,5 +6,5 @@ machine:
 deployment:
   override:
     - mvn -s circle_settings.xml clean site deploy
-  #post:
-  #  - cp -r ./target/site/* $CIRCLE_TEST_REPORTS/
+  post:
+    - cp -r ./target/site/* $CIRCLE_TEST_REPORTS/
