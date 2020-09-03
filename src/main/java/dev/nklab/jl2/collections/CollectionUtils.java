@@ -6,9 +6,11 @@
 package dev.nklab.jl2.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.Spliterators;
 import java.util.stream.Stream;
@@ -31,6 +33,17 @@ public interface CollectionUtils {
     public static <T> Stream<T> toStream(Iterator<T> interator) {
         var spliterator = Spliterators.spliteratorUnknownSize(interator, 0);
         return StreamSupport.stream(spliterator, false);
+    }
+
+    /**
+     * Transform iterator to stream.
+     *
+     * @param <T> the class of the objects in the set
+     * @param iterable original iterator
+     * @return stream which is wrapped original iterator.
+     */
+    public static <T> Stream<T> toStream(Iterable<T> iterable) {
+        return StreamSupport.stream(iterable.spliterator(), false);
     }
 
     /**
@@ -65,4 +78,19 @@ public interface CollectionUtils {
         return xs;
     }
 
+    /**
+     * Concat two sets as new map object.
+     *
+     * @param <T> the class of the objects in the list
+     * @param xs1 first map
+     * @param xs2 second map
+     * @return new set contains all of the element of map1 and map2.
+     */
+    public static <K, V> Map<K, V> concat(Map<K, V> xs1, Map<K, V> xs2) {
+        var xs = new HashMap<K, V>();
+        xs.putAll(xs1);
+        xs.putAll(xs2);
+
+        return xs;
+    }
 }
