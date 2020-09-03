@@ -12,16 +12,17 @@ Please add to "pom.xml".
 ```xml 
 <repositories>
     <repository>
-        <id>koduki-repos</id>
-        <url>https://raw.githubusercontent.com/koduki/koduki.github.io/mvn-repo/</url>
+        <id>nklab-repos</id>
+        <name>NKLab repository</name>
+        <url>https://storage.googleapis.com/artifacts.slide4vr.nklab.dev/snapshot/</url>
     </repository>
-</repositories>
+</repositories> 
 
 <dependencies>
     <dependency>
-        <groupId>cn.orz.pascal</groupId>
+        <groupId>nklab.dev.jl2</groupId>
         <artifactId>jl2</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.2-SNAPSHOT</version>
     </dependency>
 </dependencies>
 ```
@@ -36,7 +37,7 @@ Please import follwoing "static import".
 This is a extention for easy access to this library API.
 
 ```java
-import static cn.orz.pascal.jl2.Extentions.*;
+import static dev.nklab.jl2.Extentions.*;
 ```
 
 ### Tuple
