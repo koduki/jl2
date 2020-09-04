@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['clean', 'package', '-f', 'pom.xml']
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['-B', 'deploy', '-f', 'pom.xml']
